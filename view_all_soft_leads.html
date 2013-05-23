@@ -475,15 +475,16 @@
 <script src="js/fileinput.jquery.js"></script>
 <script src="js/jquery-ui-1.8.23.custom.min.js"></script>
 <script src="js/jquery.touchdown.js"></script>
-<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.js"></script>
-<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.stack.js"></script>
-<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.pie.js"></script>
-<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.resize.js"></script>
-<script language="javascript" type="text/javascript" src="js/plugins/jquery.peity.min.js"></script>
+<script src="js/plugins/flot/jquery.flot.js"></script>
+<script src="js/plugins/flot/jquery.flot.stack.js"></script>
+<script src="js/plugins/flot/jquery.flot.pie.js"></script>
+<script src="js/plugins/flot/jquery.flot.resize.js"></script>
+<script src="js/plugins/jquery.peity.min.js"></script>
 <script src="js/plugins/justGage.1.0.1/resources/js/raphael.2.1.0.min.js"></script>
 <script src="js/plugins/justGage.1.0.1/resources/js/justgage.1.0.1.min.js"></script>
 <script src="js/plugins/datatables/js/jquery.dataTables.js"></script>
 <script src="js/plugins/jquery.uniform.min.js"></script>
+<script src="js/plugins/chosen/chosen/chosen.jquery.min.js"></script>
 <script type='text/javascript'>
     $(window).load(function() {
 			$('#loading').fadeOut();
@@ -504,35 +505,27 @@
     $(function() {
       $("input[type=checkbox], input:radio, input:file").uniform();
       var dontSort = [];
-                $('#datatable_example thead th').each( function () {
-                    if ( $(this).hasClass( 'no_sort' )) {
-                        dontSort.push( { "bSortable": false } );
-                    } else {
-                        dontSort.push( null );
-                    }
+      $('#manage_cust thead th').each( function () {
+        if ( $(this).hasClass( 'no_sort' )) {
+          dontSort.push( { "bSortable": false } );
+        } else {
+          dontSort.push( null );
+        }
       } );
 			$('#manage_cust').dataTable({
         "bPaginate": true,
         "bJQueryUI": false,
         "sPaginationType": "full_numbers",
         "aaSorting": [[ 1, "asc" ]],
-				"sDom": "<'row-fluid table_top_bar'<'span12'<'to_hide_phone' >>>t<'row-fluid control-group full top' <'span4 to_hide_tablet'l><'span8 pagination'p>>",
-			});
-		/*
-      $('#manage_cust').dataTable( {
-        "sDom": "<'row-fluid table_top_bar'<'span12'<'to_hide_phone' f>>>t<'row-fluid control-group full top' <'span4 to_hide_tablet'l><'span8 pagination'p>>",
-        "aaSorting": [[ 1, "asc" ]],
-        "bPaginate": true,
-
-        "sPaginationType": "full_numbers",
-        "bJQueryUI": false,
+				"sDom": "<'row-fluid'<'span12'<'to_hide_phone' >>>t<'row-fluid control-group full top' <'span4 to_hide_tablet'l><'span8 pagination'p>>",
         "aoColumns": dontSort,
-        
-      } );
-			*/
+			});
       $.extend( $.fn.dataTableExt.oStdClasses, {
         "s`": "dataTables_wrapper form-inline"
       } );
+      //$(".chzn-select, .dataTables_length select").chosen({
+      //  disable_search_threshold: 10
+      //});
     } );
 </script>
 </body>
