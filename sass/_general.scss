@@ -300,10 +300,14 @@ html {
 	// 	text-align: left;
 	// }
 
-	// .dropdown-menu {
-	// 	min-width: 210px;
-	// 	@include box-sizing(border-box);
-	// }
+	 .dropdown-menu {
+	 	min-width: 210px;
+	  z-index: 9999;
+	 	@include box-sizing(border-box);
+	  li {
+			text-align: left;
+	  } 
+   }
 
 	.input-xxlarge {
 		width: 435px;
