@@ -14,6 +14,12 @@
 <link href="css/jquery-ui-1.8.23.custom.css" rel="stylesheet">
 <style>
   .account_info { margin-bottom: 12px; }
+	.controls { 
+	  margin-left: 180px !important;
+	}
+	.controls input[type='checkbox'] {
+	  margin-top: -2px;
+	}
 </style>
 <script src="js/plugins/modernizr.custom.32549.js"></script>
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -341,14 +347,14 @@
                               <div class="control-group">
                                  <label class="control-label" for="input1">First Name</label>
                                  <div class="controls">
-                                    <input type="text" id="input1" style="width:235px;" />
+                                    <input type="text" id="input1" />
                                  </div>
                               </div>
                               
                                <div class="control-group">
                                  <label class="control-label" for="input1">Last Name</label>
                                  <div class="controls">
-                                    <input type="text" id="input1" style="width:235px;" />
+                                    <input type="text" id="input1" />
                                  </div>
                               </div>
                               
@@ -382,49 +388,49 @@
                                <div class="control-group">
                                  <label class="control-label" for="input1">Address Line 1</label>
                                  <div class="controls">
-                                    <input type="text" id="input1" style="width:235px;" />
+                                    <input type="text" id="input1" />
                                  </div>
                               </div>
                               
                                <div class="control-group">
                                  <label class="control-label" for="input1">Address Line 2</label>
                                  <div class="controls">
-                                    <input type="text" id="input1" style="width:235px;" />
+                                    <input type="text" id="input1" />
                                  </div>
                               </div>
                               
                                <div class="control-group">
                                  <label class="control-label" for="input1">City</label>
                                  <div class="controls">
-                                    <input type="text" id="input1" style="width:235px;" />
+                                    <input type="text" id="input1" />
                                  </div>
                               </div>
                               
                                <div class="control-group">
                                  <label class="control-label" for="input1">State/Province</label>
                                  <div class="controls">
-                                    <input type="text" id="input1" style="width:235px;" />
+                                    <input type="text" id="input1" />
                                  </div>
                               </div>
                               
                                <div class="control-group">
                                  <label class="control-label" for="input1">Country</label>
                                  <div class="controls">
-                                    <input type="text" id="input1" style="width:235px;" />
+                                    <input type="text" id="input1" />
                                  </div>
                               </div>
                               
                                <div class="control-group">
                                  <label class="control-label" for="input1">Zip Code</label>
                                  <div class="controls">
-                                    <input type="text" id="input1" style="width:235px;" />
+                                    <input type="text" id="input1" />
                                  </div>
                               </div>
                               
                                <div class="control-group">
                                  <label class="control-label" for="input1">Custom Text Field</label>
                                  <div class="controls">
-                                    <input type="text" id="input1" style="width:235px;" />
+                                    <input type="text" id="input1" />
                                  </div>
                               </div>
                               
@@ -440,24 +446,19 @@
                               <div class="control-group">
                               	<label class="control-label" for="input1">Custom List</label>
                                 <div class="controls">
-                                <select style="width:245px;" data-placeholder="" tabindex="1">
-													<option value="">Item 1</option>
-				<option value="">Item 2</option>
-				
-                                 
-                                    </select>
+                                <select>
+																	<option value="">Item 1</option>
+																	<option value="">Item 2</option>
+                                </select>
                                 </div>
                               </div>
                               
                                <div class="control-group">
                                <label class="control-label" for="input7">Custom Pick List</label>
                                        <div class="controls">
-                                          <label class="checkbox line">
-                                          <input type="checkbox" value="" /> Item 1
-                                          </label>
-                                          <label class="checkbox line">
-                                          <input type="checkbox" value="" /> Item 2
-                                          </label>
+																				 
+																				 <label><input type="checkbox" value="" /> Item 1</</label>
+																				 <label><input type="checkbox" value="" /> Item 2</label>
                                        </div>
                                     </div>
                                     
@@ -467,10 +468,11 @@
                                <div class="control-group">
                                <label class="control-label" for="input7">Choose Type of Lead</label>
                                        <div class="controls">
-                                         <select style="width:245px;" data-placeholder="" tabindex="1">
-													<option value=""></option>
-                                                    <option value="">Soft Lead</option>
-				<option value="">Qualified Lead</option></select>
+                                         <select>
+																					 <option value=""></option>
+                                           <option value="">Soft Lead</option>
+																					 <option value="">Qualified Lead</option>
+																				 </select>
                                        </div>
                                     </div>
                                        
@@ -480,10 +482,10 @@
                               
                               <div class="control-group">
                                        <div class="controls">
-                                          <label class="checkbox line">
+                                          <label>
                                           <input type="checkbox" value="" /> Campaign 1
                                           </label>
-                                          <label class="checkbox line">
+                                          <label>
                                           <input type="checkbox" value="" /> Campaign 2
                                           </label>
                                        </div>

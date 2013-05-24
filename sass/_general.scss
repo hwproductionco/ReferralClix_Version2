@@ -155,7 +155,7 @@
 
 			.controls {
 				@include clearfix;
-				margin-left: 0;
+				margin-left: 180px !important;
 				// float: left;
 
 				& > .btn,

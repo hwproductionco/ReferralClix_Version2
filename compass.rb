@@ -3,7 +3,7 @@
 # required ibidem configuration
 http_path = ""
 css_dir = "css"
-images_dir = "css/images"
+images_dir = ["css/images","img"]
 relative_assets = true
 
 # Output style
