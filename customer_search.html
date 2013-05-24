@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
 <meta charset="utf-8">
-<title>ReferralClix - Template</title>
+<title>ReferralClix | Reports | Advance Search</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -309,12 +309,44 @@
         <div class="box gradient">
           <div class="title">
             <h3>
-            <i class="icon-sitemap"></i>
-            <span>Box Header Goes Here</span>
+            <i class="icon-search"></i>
+            <span>Advanced Search</span>
             </h3>
           </div>
           <div class="content">
-             Content Goes here
+						<form action="#">
+							<input type="hidden" name="count" value="1" />
+							<div class="control-group" id="fields">
+								<div class="controls" id="profs">
+									<div class="input-append">
+<select class="span3 " tabindex="1" id="searchfield1" name="search1" data-placeholder="Choose a Category" style="padding-right:10px;">
+																			 <option value="">Search For...</option>
+																			 <option value="Card Number">Card Number</option>
+																			 <option value="First Name">First Name</option>
+																			 <option value="Last Name">Last Name</option>
+																			 <option value="Email Address">Email Address</option>
+																			 <option value="Birthday">Birthday</option>
+																			 <option value="Address Line 1">Address Line 1</option>
+																			 <option value="Address Line 2">Address Line 2</option>
+																			 <option value="City">City</option>
+																			 <option value="State / Province">State / Province</option>
+																			 <option value="Zip / Postal Code">Zip / Postal Code</option>
+																			 <option value="County">Country</option>
+																			 <option value="Username">Username</option>
+																			 <option value="Custom Field">Custom Field</option>
+																		 </select>
+																		 <img src="img/clearpix.png" width="15" height="5" />
+																		 <input style="padding-left:10px;" autocomplete="off" class="span3" id="field1" name="prof1" type="text" placeholder=""  data-items="8"/>
+																		 <button id="b1" onClick="addFormField()" class="btn btn-info" type="button">+</button>
+									</div>
+								</div>
+							</div>
+
+              <div class="form-actions" style="padding-top:35px;">
+                <button type="button" class="btn btn-primary" onclick="window.location.href='advance_search_results.html'"><i class="icon-play"></i> Run Report</button>
+                <button type="button" class="btn btn-warning"><i class="icon-ban-circle"></i> Reset</button>
+              </div>
+						</form>
           </div>
         </div>
         <!-- End .box -->
@@ -377,6 +409,18 @@
       $(".line").peity("line").fadeIn();
     };
 });
+</script>
+    <script type="text/javascript">
+        var next = 1;
+        function addFormField(){
+        var addto = "#field" + next; 
+	      next = next + 1;
+          var newIn = '<br /><br /><select class="span3 " tabindex="1" id="searchfield' + next + '" name="search' + next + '" data-placeholder="Choose a Category" style="padding-right:10px;"><option value="">Select...</option><option value="Card Number">Card Number</option><option value="First Name">First Name</option><option value="Last Name">Last Name</option><option value="Email Address">Email Address</option><option value="Birthday">Birthday</option><option value="Address Line 1">Address Line 1</option><option value="Address Line 2">Address Line 2</option><option value="City">City</option><option value="State / Province">State / Province</option><option value="Zip / Postal Code">Zip / Postal Code</option><option value="County">Country</option><option value="Username">Username</option><option value="Custom Field">Custom Field</option></select><img src="img/clearpix.png" width="15" height="5" /><input autocomplete="off" class="span3" id="field' + next + '" name="field' + next + '" type="text" data-provide="typeahead" data-items="8">';
+            var newInput = $(newIn);
+	        $(addto).after(newInput);
+            $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+            $("#count").val(next);  
+        }
 </script>
 </body>
 </html>
