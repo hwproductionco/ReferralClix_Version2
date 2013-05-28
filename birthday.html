@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
 <meta charset="utf-8">
-<title>ReferralClix - Template</title>
+<title>Reports - Customers Birthday</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -291,18 +291,7 @@
       </div>
     </div>
     <!-- End container_top -->
-		<div class="row-fluid account_info">
-			<div class="span4 responsive">
-				<div><strong>Account Name:</strong><br />RCI</div>
-				<div><strong>Account ID:</strong><br />RCI</div>
-			</div>
-    
-			<div class="span4 responsive">
-				<div><strong>Support Phone Number:</strong><br />(555) 444-8877</div>
-				<div><strong>Support Email:</strong><br /><a href="mailto:support@ReferralClix.com">support@ReferralClix.com</a></div>
-			</div>
-		</div>
-
+    <h2>Reports - Customers Birthday</h2>
     <div class="row-fluid">
 
       <div class="span12">
@@ -310,11 +299,54 @@
           <div class="title">
             <h3>
             <i class="icon-sitemap"></i>
-            <span>Box Header Goes Here</span>
+            <span>Reports - Customers Birthday</span>
             </h3>
           </div>
           <div class="content">
-             Content Goes here
+             <!-- BEGIN FORM -->
+                              
+                              
+							  <form class="form-horizontal" action="#">
+							  <div class="form-row control-group row-fluid">
+                <label class="control-label span3">Default Date Ranges</label>
+                <div class="controls span7">
+                  <div class="input-append date row-fluid" id="datepicker2" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                    <input type="text" value="12-02-2012" class="row-fluid">
+                    <span class="add-on"><i class="icon-th"></i></span>
+                  </div>
+                </div>
+              </div>
+                              
+                              
+                             <div class="form-row control-group row-fluid ">
+                <label class="control-label span3">Select Campaigns </label>
+                <div class="controls span7">
+                  <label class="checkbox ">
+                  <input type="checkbox" id="group-checkable" checked value="option1">Select/Deselect All</label>
+                  <label class="checkbox ">	  
+                  <input type="checkbox" id="inlineCheckbox1" checked value="option1">Application Install (Facebook Badge)</label>
+                  <label class="checkbox">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2">Bonus Points</label>
+				  <label class="checkbox">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2">Checkin (Facebook Badge)</label>
+				  <label class="checkbox">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2">Qualified Leads</label>
+				  <label class="checkbox">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2">Referral (Facebook Badge) </label>
+				  <label class="checkbox">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2">Referral 5 (Facebook Badge) </label>
+				  <label class="checkbox">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2">Soft Leads</label>
+                </div>
+              </div>
+                              
+                            
+                              <div class="form-actions" style="padding-top:35px;">
+                                 <button type="button" class="btn btn-primary" onclick="window.location.href='all_transactions_report.html'"><i class="icon-play"></i> Run Report</button>
+                                 <button type="button" class="btn btn-warning"><i class="icon-ban-circle"></i> Reset</button>
+                              </div>
+                              </div>
+                              <!-- END FORM -->
           </div>
         </div>
         <!-- End .box -->
@@ -350,32 +382,77 @@
 <script src="js/bootstrap-collapse.js"></script>
 <script src="js/bootstrap-carousel.js"></script>
 <script src="js/bootstrap-typeahead.js"></script>
-<script src="js/scripts.js"></script>
+
 <script src="js/fileinput.jquery.js"></script>
 <script src="js/jquery-ui-1.8.23.custom.min.js"></script>
 <script src="js/jquery.touchdown.js"></script>
+<!-- Textarea editor https://github.com/jhollingworth/bootstrap-wysihtml5/ -->
+<script src="js/plugins/justGage.1.0.1/resources/js/raphael.2.1.0.min.js"></script>
+<script src="js/plugins/justGage.1.0.1/resources/js/justgage.1.0.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/wysihtml5-0.3.0.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/bootstrap-wysihtml5.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.peity.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.uniform.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/textarea-autogrow.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/character-limit.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.maskedinput-1.3.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/chosen/chosen/chosen.jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/bootstrap-datepicker.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/bootstrap-colorpicker.js"></script>
+
 <script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.js"></script>
 <script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.stack.js"></script>
 <script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.pie.js"></script>
 <script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.resize.js"></script>
-<script language="javascript" type="text/javascript" src="js/plugins/jquery.peity.min.js"></script>
-<script src="js/plugins/justGage.1.0.1/resources/js/raphael.2.1.0.min.js"></script>
-<script src="js/plugins/justGage.1.0.1/resources/js/justgage.1.0.1.min.js"></script>
+
+<script src="js/scripts.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("input:checkbox, input:radio, input:file").uniform();
+        $('textarea.autogrow').autogrow();
+        var elem = $("#chars");
+        $("#text").limiter(100, elem);
+        // Mask plugin http://digitalbush.com/projects/masked-input-plugin/
+        $("#mask-phone").mask("(999) 999-9999");
+        $("#mask-date").mask("99-99-9999");
+        $("#mask-int-phone").mask("+33 999 999 999");
+        $("#mask-tax-id").mask("99-9999999");
+        $("#mask-percent").mask("99%");
+        // Editor plugin https://github.com/jhollingworth/bootstrap-wysihtml5/
+        $('#editor1').wysihtml5({
+          "image": false,
+          "link": false
+          });
+        // Chosen select plugin
+        $(".chzn-select").chosen({
+          disable_search_threshold: 10
+        });
+        // Datepicker
+        $('#datepicker1').datepicker({
+          format: 'mm-dd-yyyy'
+        });
+        $('#datepicker2').datepicker();
+        $('.colorpicker').colorpicker()
+        $('#colorpicker3').colorpicker();
+    });
+    </script>
 <script type='text/javascript'>
     $(window).load(function() {
      $('#loading').fadeOut();
     });
-</script>
-<script type="text/javascript">
-    $(function () {
-          if (Modernizr.canvas) {
-      $(".bar").peity("bar", {
-        colour: "#fff",
-        width: 50,
-        height: 17
-      }).fadeIn();
-      $(".line").peity("line").fadeIn();
-    };
+
+ $(document).ready(function() {
+      $('body').css('display', 'none');
+      $('body').fadeIn(500);
+
+      $("#logo a, #sidebar_menu a:not(.accordion-toggle), a.ajx").click(function() {
+      event.preventDefault();
+      newLocation = this.href;
+      $('body').fadeOut(500, newpage);
+      });
+      function newpage() {
+      window.location = newLocation;
+      }
 });
 </script>
 </body>
