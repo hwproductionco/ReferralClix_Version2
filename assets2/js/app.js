@@ -12,7 +12,6 @@ define([
 ){
   return {
     initialize: function(){
-
       //Bootstrap tabs from json.
       new TabView({
         title: "Form Settings"
@@ -25,8 +24,6 @@ define([
         title: "Field Rules"
       });
       
-
-
       //Make the first tab active!
       $(".tab-pane").first().addClass("active");
       $("ul.nav li").first().addClass("active");
