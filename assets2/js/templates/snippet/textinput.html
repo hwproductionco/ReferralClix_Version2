@@ -3,7 +3,7 @@
   <label class="control-label" for="<%= id %>"><%= label %></label>
 	<i class="icon-question-sign muted inline" rel="tooltip" data-placement="top" data-original-title="Test"></i>
   <div class="controls">
-    <input id="<%= id %>" name="<%= id %>" type="text" " class="<%= inputsize %>" <% if(required) {%> required <% } %> />
+    <input id="<%= id %>" name="<%= id %>" type="text" " class="<%= inputsize || 'medium' %>" <% if(required) {%> required <% } %> />
     <% if (helptext.length > 0) { %>
 		  <p class="help-block"><%= helptext %></p>
 		<% } %>
