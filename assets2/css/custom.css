@@ -82,12 +82,16 @@ form .popover form {
 
 .target:after{
   float:left;
-  content: " ";
   height: 77px; 
   margin-top: 3px;
   background: #f0f0f0;
   width: 100%;
   border: 1px dashed #ccc;
+	content: "Drop fields here to add them to the form";
+  font-size: 18px;
+	text-align: center;
+  line-height: 77px;
+  color: #ccc;
 }
 
 #target, #input, #radioscheckboxes, #select, #buttons {

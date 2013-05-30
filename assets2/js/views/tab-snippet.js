@@ -14,6 +14,7 @@ define([
       "mousedown" : "mouseDownHandler"
     }
     , mouseDownHandler: function(mouseDownEvent){
+			console.log('calling mousedown handler');
       mouseDownEvent.preventDefault();
       mouseDownEvent.stopPropagation();
       //hide all popovers
