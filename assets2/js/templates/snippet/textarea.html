@@ -1,0 +1,10 @@
+<!-- Textarea -->
+<div class="control-group">
+  <label class="control-label" for ="<%= id %>"><%= label %></label>
+	<% if (helptext.length > 0) { %>
+	  <i class="icon-question-sign muted inline has-tip" rel="tooltip" data-placement="right" title="<%= helptext %>"></i>
+	<% } %>
+  <div class="controls">                     
+    <textarea id="<%= id %>" name="<%= id %>" ><%= textarea %></textarea>
+  </div>
+</div>
