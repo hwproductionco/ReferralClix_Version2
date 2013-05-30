@@ -30,6 +30,7 @@ define([
         , "textarea-split" : _.template(_PopoverTextAreaSplit)
         , "checkbox" : _.template(_PopoverCheckbox)
       }
+			$('.has-tip').tooltip();
     }
     , render: function(withAttributes){
       var that = this;

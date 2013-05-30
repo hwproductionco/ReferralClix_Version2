@@ -20,7 +20,7 @@
       "helptext": {
         "label": "Help Text",
         "type": "input",
-        "value": "help"
+        "value": "This is a name field"
       },
       "required": {
         "label": "Required",
@@ -66,12 +66,12 @@
     }
   },
   {
-    "title": "Text Input",
+    "title": "Address",
     "fields": {
       "id": {
         "label": "ID / Name",
         "type": "input",
-        "value": "textinput"
+        "value": "address"
       },
       "label": {
         "label": "Label",
@@ -86,7 +86,7 @@
       "helptext": {
         "label": "Help Text",
         "type": "input",
-        "value": "help"
+        "value": "All the address fields can be dragged together"
       },
       "required": {
         "label": "Required",
@@ -152,7 +152,7 @@
       "helptext": {
         "label": "Help Text",
         "type": "input",
-        "value": "help"
+        "value": "This is a phone field"
       },
       "required": {
         "label": "Required",
@@ -218,7 +218,7 @@
       "helptext": {
         "label": "Help Text",
         "type": "input",
-        "value": "help"
+        "value": "This is the email field"
       },
       "required": {
         "label": "Required",
@@ -284,7 +284,7 @@
       "helptext": {
         "label": "Help Text",
         "type": "input",
-        "value": "help"
+        "value": "This is a textarea"
       },
       "required": {
         "label": "Required",
