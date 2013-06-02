@@ -1,15 +1,18 @@
 <!-- Address-->
 <div class="control-group">
-  <label class="control-label" for="<%= id %>"><%= label %></label>
-	<% if (helptext.length > 0) { %>
-	  <i class="icon-question-sign muted inline has-tip" rel="tooltip" data-placement="right" title="<%= helptext %>"></i>
-	<% } %>
+  <label class="control-label" for="<%= id %>" style="padding-right:10px;"><%= label %></label>
+	
   <div class="controls">
-    <input name="address" type="text" placeholder="address" class="<%= inputsize || 'medium' %>" <% if(required) {%> required <% } %> />
-		<label for="city" class="control-label">City</label>
-		<input name="city" type="text" placeholder="city" />
-		<label for="state" class="control-label">State</label>
-<select name="state">
+    <input name="address" type="text" placeholder="address" class="<%= inputsize || 'medium' %>" <% if(required) {%> required <% } %> /> <% if (helptext.length > 0) { %>
+      <i class="icon-question-sign muted inline has-tip" rel="tooltip" data-placement="right" title="<%= helptext %>"></i>
+    <% } %>
+</div>
+<div class="controls" style="position:relative; left:-10px;">
+    <table border="0" width="90%;" cellpadding="2" cellspacing="2">
+        <tr>
+            <td nowrap style="150px;"><label for="city" class="control-label" style="padding-right:10px;">City</label> <input name="city" type="text" placeholder="city" style="width:100px;"/></td>
+            <td nowrap style="150px;">
+		<label for="state" class="control-label" style="padding-right:10px;">State</label> <select name="state" style="width:120px;">
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
 	<option value="AZ">Arizona</option>
@@ -61,10 +64,16 @@
 	<option value="WV">West Virginia</option>
 	<option value="WI">Wisconsin</option>
 	<option value="WY">Wyoming</option>
-</select>
-    <label for="zip" class="control-label">Zip Code</label>
-		<input name="zip" placeholder="zip code" />
-		<label for="country" class="control-label">Country</label>
+</select></td>
+<td nowrap style="175px;">
+    <label for="zip" class="control-label" style="padding-right:10px;">Zip Code</label>
+		<input name="zip" placeholder="zip code" type="text" style="width:75px;"/>
+    </td>
+</tr>
+</table>
+</div>
+<div class="controls" >
+		<label for="country" class="control-label" style="padding-right:10px;">Country</label>
 		<select name="country">
     <option value="  " selected>(please select a country)</option>
     <option value="--">none</option>
@@ -308,8 +317,7 @@
     <option value="ZM">Zambia</option>
     <option value="ZW">Zimbabwe</option>
 </select>
-    <% if (helptext.length > 0) { %>
-		  <p class="help-block"><%= helptext %></p>
-		<% } %>
+
+   
   </div>
 </div>
