@@ -1,0 +1,16 @@
+<!-- Textarea -->
+<div class="control-group">
+  <table border="0" width="100%">
+  	<tr>
+  		<td><label class="control-label" for ="<%= id %>"><%= label %></label></td>
+	
+  <td align="left"><div class="controls">                     
+    <textarea id="<%= id %>" name="<%= id %>" ><%= textarea %></textarea>
+    <% if (helptext.length > 0) { %>
+	  <i class="icon-question-sign muted inline has-tip" rel="tooltip" data-placement="right" title="<%= helptext %>"></i>
+	<% } %>
+</td>
+</tr>
+</table>
+  </div>
+</div>
