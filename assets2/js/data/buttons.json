@@ -42,7 +42,7 @@
             "selected": false
           },
           {
-            "value": "btn-primary",
+            "value": "btn-success",
             "label": "Primary",
             "selected": true
           },
@@ -103,7 +103,7 @@
             "selected": false
           },
           {
-            "value": "btn-primary",
+            "value": "btn-success",
             "label": "Primary",
             "selected": false
           },
@@ -154,7 +154,7 @@
             "selected": false
           },
           {
-            "value": "btn-primary",
+            "value": "btn-success",
             "label": "Primary",
             "selected": false
           },

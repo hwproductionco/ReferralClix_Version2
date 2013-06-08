@@ -2,60 +2,21 @@
 <html class="no-js" lang="en">
 <head>
 <meta charset="utf-8">
-<title>ReferralClix - Survey Site Visits by Location</title>
+<title>ReferralClix - Messages</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="shortcut icon" href="css/images/favicon.png">
- <!-- Le styles -->
-  <link href="css/twitter/bootstrap.css" rel="stylesheet">
-  <link href="css/base.css" rel="stylesheet">
-  <link href="css/twitter/responsive.css" rel="stylesheet">
-  <link href="css/jquery-ui-1.8.23.custom.css" rel="stylesheet">
-      <style>
-      #gmap3 {
-        text-align:center;
-      }
-      .gmap3{
-        margin: 20px auto;
-        border: 1px dashed #C0C0C0;
-        width: 1000px;
-        height: 750px;
-      }
-      .cluster{
-        color: #FFFFFF;
-        text-align:center;
-        font-family: 'Arial, Helvetica';
-        font-size:11px;
-        font-weight:bold;
-      }
-      .cluster-1{
-        background-image:url(img/maps/m1.png);
-        line-height:53px;
-        width: 53px;
-        height: 52px;
-      }
-      .cluster-2{
-        background-image:url(img/maps/m2.png);
-        line-height:53px;
-        width: 56px;
-        height: 55px;
-      }
-      .cluster-3{
-        background-image:url(img/maps/m3.png);
-        line-height:66px;
-        width: 66px;
-        height: 65px;
-      }
-    </style>
-
-
-  <script src="js/plugins/modernizr.custom.32549.js"></script>
-    <link rel="shortcut icon" href="css/images/favicon.png">
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
+<!-- Le styles -->
+<link href="css/twitter/bootstrap.css" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/twitter/responsive.css" rel="stylesheet">
+<link href="css/jquery-ui-1.8.23.custom.css" rel="stylesheet">
+<script src="js/plugins/modernizr.custom.32549.js"></script>
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+      <![endif]-->
 </head>
 <body>
 <div id="loading">
@@ -342,7 +303,8 @@
       <li class="dropdown">
       <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
       <span class="icon"><img src="img/menu_top/profile-messages.png"></span><span class="notifications">3</span>
-      </a><ul class="dropdown-menu messages" aria-labelledby="dLabel">
+      </a>
+      <ul class="dropdown-menu messages" aria-labelledby="dLabel">
         <div class="container">
           <div class="heading">
             <span class="title"><i class="icon-comments"></i>Messages</span><span class="link"><a href="compose_message.html">Send a new message</a></span>
@@ -446,47 +408,88 @@
                     
                   </div>  
 
-    <div class="box gradient span12">
+                  <div class="row-fluid">
 
-      <div class="title">
-            <div class="row-fluid">
-                <h3 class="span10">
-                  <i class=" icon-bar-chart"></i> Survey Site Visits by Location
-                </h3>
-                
+    <div class="span12 box gradient">
+          <div class="row-fluid">
+            <div class="title">
+              <h4>
+              <i class="icon-inbox"></i>
+              <span>Compose Message</span>
+              </h4>
             </div>
-        </div><!-- End .title -->
-        <div class="content">
+            <!-- End .title -->
+            <div class="content">
+              
+                <div class="form-row control-group row-fluid">
+                <label class="control-label span3" for="default-select">Recipient</label>
+                <div class="controls span7">
+                  <select data-placeholder="Choose your favorite character..." class="chzn-select" id="default-select">
+                    <option value=""></option>
+                    <option value="Bender">Celest Holm</option>
+                    <option value="Zapp Brannigan">Mark Jobs</option>
+                    <option value="Zoidberg">Jon Doe</option>
+                    <option value="Kif Kroker">John Smith</option>
+                  </select>
+                </div>
+              </div>
 
-             <select class="input-medium" data-placeholder="All Campaigns" tabindex="1" style="margin-top:3px; margin-left:5px; margin-right:5px;">
-                                       <option value="All Campaigns">All Campaigns</option>
-                                       <option value="Campaign 1">Campaign 1</option>
-                                       <option value="Campaign 2">Campaign 2</option>
-                                       <option value="Campaign 3">Campaign 3</option>
-                                      
-                                    </select>
-                           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" /> <strong>Date Created <input type="text" class="input-large date-range" style="margin-left:10px; margin-top:3px;" /> <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" /> <strong>Range</strong> <select class="input-medium" data-placeholder="Today" tabindex="1" style="margin-top:3px; margin-left:5px; margin-right:5px;">
-                                       <option value="All Campaigns">Today</option>
-                                       <option value="Campaign 1">Yesterday</option>
-                                       <option value="Campaign 2">Last 7 Days</option>
-                                       <option value="Campaign 3">Last 30 Days</option>
-                                       <option value="Campaign 4">This Month</option>
-                                       <option value="Campaign 4">Last Month</option>
-                                       <option value="Campaign 4">Last 3 Months</option>
-                                       <option value="Campaign 4">Last 6 Months</option>
-                                       <option value="Campaign 4">Last 12 Months</option>
-                                       <option value="Campaign 4">Last 18 Months</option>
-                                       <option value="Campaign 4">Last 24 Months</option>
-                                    </select> <button class="btn btn-success" style="margin-top:-6px;">Go</button> 
+              <div class="form-row control-group row-fluid">
+                <label class="control-label span3" for="default-select">Send To</label>
+                <div class="controls span4">
+                  <select data-placeholder="Choose your favorite character..." class="chzn-select" id="default-select">
+                    <option value=""></option>
+                    <option value="Bender">Dashboard</option>
+                    <option value="Zapp Brannigan">Lead Site</option>
+                    <option value="Zoidberg">iPad</option>
+                    <option value="Kif Kroker">All</option>
+                  </select>
+                </div>
+              </div>
 
-          <div id="gmap4" style="height:300px; width:100%"></div>
-          
-        </div> <!-- End .content -->
-    </div><!-- End .span6 .box -->
-</div><!-- End .row-fluid -->
+               <div class="form-row control-group row-fluid">
+                <label class="control-label span3" for="default-select">Priority</label>
+                <div class="controls span4">
+                  <select data-placeholder="Choose your favorite character..." class="chzn-select" id="default-select">
+                    <option value=""></option>
+                    <option value="Bender">Critical</option>
+                    <option value="Zapp Brannigan">Escalated</option>
+                    <option value="Zoidberg">Normal</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row control-group row-fluid">
+                <label class="control-label span3" for="normal-field">Subject</label>
+                <div class="controls span3">
+                  <input type="text" id="normal-field" class="row-fluid">
+                </div>
+              </div>
+
+              <div class="form-row control-group row-fluid">
+                <label class="control-label span3" for="elastic-textarea">Message 
+                </label>
+                <div class="controls span3">
+                  <textarea rows="10" class="row-fluid autogrow" id="elastic-textarea" placeholder=""></textarea>
+                </div>
+              </div>
+
+              <div class="form-actions row-fluid">
+                <div class="span7 offset3">
+                  <button type="submit" class="btn btn-success">Send Message</button>
+                  <button type="button" class="btn btn-secondary">Cancel</button>
+                </div>
+              </div>
 
 
-    
+            </div>
+            <!-- End .content -->
+          </div>
+          <!-- End .box -->
+        </div>
+        <!-- End .span6 -->
+      </div>
+    </div>
   </div>
   <!-- End #container -->
   <div id="footer">
@@ -500,229 +503,81 @@
 <!-- /container -->
 <!-- Le javascript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-
-    <script src="js/jquery.js"></script>
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
 <script language="javascript" type="text/javascript" src="js/plugins/jquery.sparkline.min.js"></script>
-    <script src="js/plugins/excanvas.compiled.js"></script>
-    
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
-    <script src="js/fileinput.jquery.js"></script>
-    <script src="js/jquery-ui-1.8.23.custom.min.js"></script>
-    <script src="js/jquery.touchdown.js"></script>
+<script src="js/bootstrap-transition.js"></script>
+<script src="js/bootstrap-alert.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+<script src="js/bootstrap-dropdown.js"></script>
+<script src="js/bootstrap-scrollspy.js"></script>
+<script src="js/bootstrap-tab.js"></script>
+<script src="js/bootstrap-tooltip.js"></script>
+<script src="js/bootstrap-popover.js"></script>
+<script src="js/bootstrap-button.js"></script>
+<script src="js/bootstrap-collapse.js"></script>
+<script src="js/bootstrap-carousel.js"></script>
+<script src="js/bootstrap-typeahead.js"></script>
 
+<script src="js/fileinput.jquery.js"></script>
+<script src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script src="js/jquery.touchdown.js"></script>
+<!-- Textarea editor https://github.com/jhollingworth/bootstrap-wysihtml5/ -->
+<script src="js/plugins/justGage.1.0.1/resources/js/raphael.2.1.0.min.js"></script>
+<script src="js/plugins/justGage.1.0.1/resources/js/justgage.1.0.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/wysihtml5-0.3.0.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/bootstrap-wysihtml5.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.peity.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.uniform.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/textarea-autogrow.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/character-limit.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.maskedinput-1.3.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/chosen/chosen/chosen.jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/bootstrap-datepicker.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/bootstrap-colorpicker.js"></script>
 
+<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.stack.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.pie.js"></script>
+<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.resize.js"></script>
 
-    <script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.js"></script>
-    <script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.stack.js"></script>
-
-    <script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.pie.js"></script>
-    <script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.resize.js"></script>
-    <script language="javascript" type="text/javascript" src="js/plugins/jquery.peity.min.js"></script>
-
-    <script type="text/javascript" language="javascript" src="js/plugins/datatables/js/jquery.dataTables.js"></script>
-
-    <script src="js/plugins/justGage.1.0.1/resources/js/raphael.2.1.0.min.js"></script>
-    <script src="js/plugins/justGage.1.0.1/resources/js/justgage.1.0.1.min.js"></script>
-
-    <!-- Google maps -->
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script language="javascript" type="text/javascript" src="js/plugins/gmap3/gmap3.min.js"></script>
-
-    <!-- General scripts -->
-    <script src="js/scripts.js"></script>
-    <script language="javascript" type="text/javascript" src="js/jnavigate.jquery.min.js"></script>
-
-    <script type='text/javascript'>
-  
-      $(window).load(function() {
-       $('#loading').fadeOut();
-      });
-
-      $(function(){ // or $(document).ready(function(){
-      
-       // Address maps
-       $("#gmap4").gmap3();
-  
-        $('#test-ok').click(function(){
-          var addr = $('#test-address').val();
-          if ( !addr || !addr.length ) return;
-          $("#gmap4").gmap3({
-            action:   'getlatlng',
-            address:  addr,
-            callback: function(results){
-              if ( !results ) return;
-              $(this).gmap3({
-                action:'addMarker',
-                latLng:results[0].geometry.location,
-                map:{
-                  center: true,
-                  zoom:5
-                }
-              });
-            }
+<script src="js/scripts.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("input:checkbox, input:radio, input:file").uniform();
+        $('textarea.autogrow').autogrow();
+        var elem = $("#chars");
+        $("#text").limiter(100, elem);
+        // Mask plugin http://digitalbush.com/projects/masked-input-plugin/
+        $("#mask-phone").mask("(999) 999-9999");
+        $("#mask-date").mask("99-99-9999");
+        $("#mask-int-phone").mask("+33 999 999 999");
+        $("#mask-tax-id").mask("99-9999999");
+        $("#mask-percent").mask("99%");
+        // Editor plugin https://github.com/jhollingworth/bootstrap-wysihtml5/
+        $('#editor1').wysihtml5({
+          "image": false,
+          "link": false
           });
+        // Chosen select plugin
+        $(".chzn-select").chosen({
+          disable_search_threshold: 10
         });
-        
-        $('#test-address').keypress(function(e){
-          if (e.keyCode == 13){
-            $('#test-ok').click();
-          }
+        // Datepicker
+        $('#datepicker1').datepicker({
+          format: 'mm-dd-yyyy'
         });
+        $('#datepicker2').datepicker();
+        $('.colorpicker').colorpicker()
+        $('#colorpicker3').colorpicker();
+    });
+    </script>
+<script type='text/javascript'>
+    $(window).load(function() {
+     $('#loading').fadeOut();
+    });
 
-      $("#gmap1").gmap3( {
-           options:{
-            center:[40.714997,-73.97875],
-            zoom: 6,
-            mapTypeId: google.maps.MapTypeId.TERRAIN
-          }
-      });
-      $('#gmap2').gmap3(
-        { 
-        action : 'geoLatLng',
-        callback : function(latLng){
-          if (latLng){
-            $(this).gmap3({
-              action: 'addMarker', 
-              latLng:latLng,
-              map:{
-                center: true,
-                zoom: 8
-                    }
-            });
-          } else {
-            $(this).html('Cannot localise !');
-          }
-        }
-      });
-
-      // Clustered mapsvar cluster;
-    
-      $(function(){
-        $('#gmap3').gmap3({ action: 'init',
-          options:{
-            center:[46.578498,2.457275],
-            zoom: 6,
-            mapTypeId: google.maps.MapTypeId.TERRAIN
-          },
-          callback: function(map){
-            waitForBounds(map);
-          },
-          events:{
-            click: function(map, event){
-              addMarkerToCluster($(this), event.latLng);
-            },
-            rightclick: function(map, event){
-              addMarkersToCluster($(this), event.latLng);
-            }
-          }
-        });
-      });
-      
-      function waitForBounds(map){
-        var ne, sw, bounds = map.getBounds();
-        if (!bounds){
-          google.maps.event.addListenerOnce(map, 'bounds_changed', 
-            function() {
-              waitForBounds(map)
-            }
-          );
-          return;
-        }
-        ne = bounds.getNorthEast();
-        sw = bounds.getSouthWest();
-        randomMarkers(ne.lat(), sw.lng(), sw.lat(), ne.lng());
-      }
-      
-      function randomMarkers(lat1, lng1, lat2, lng2){
-        var i, list = [], rlat=lat2-lat1, rlng=lng2-lng1, lat, lng;
-        for(i=0; i<500; i++){
-          lat = lat1 + rlat * Math.random();
-          lng = lng1 + rlng * Math.random();
-          //list.push([lat, lng]);
-          list.push({lat:lat, lng:lng, data:i});
-        }
-        $('#gmap3').gmap3(
-          { action: 'addMarkers',
-            radius: 100,
-            markers: list,
-            clusters:{
-              // This style will be used for clusters with more than 0 markers
-              0: {
-                content: '<div class="cluster cluster-1">CLUSTER_COUNT</div>',
-                width: 53,
-                height: 52
-              },
-              // This style will be used for clusters with more than 20 markers
-              20: {
-                content: '<div class="cluster cluster-2">CLUSTER_COUNT</div>',
-                width: 56,
-                height: 55
-              },
-              // This style will be used for clusters with more than 50 markers
-              50: {
-                content: '<div class="cluster cluster-3">CLUSTER_COUNT</div>',
-                width: 66,
-                height: 65
-              }
-            },
-            callback: function(ref){ // get the cluster reference and save it in global variable
-             cluster = ref;
-            },
-            cluster:{
-              events:{
-               mouseover: function(cluster, event, data){
-                 $(cluster.getDOMElement()).css('border', '1px solid #FF0000');
-               },
-               mouseout: function(cluster, event, data){
-                 $(cluster.getDOMElement()).css('border', '0px');
-               }
-              }
-            }
-          }
-        );
-      }
-      
-      function addMarkerToCluster($this, latLng){
-        $this.gmap3({
-          action:'addmarker',
-          latLng:latLng,
-          to: cluster
-        });  
-      }
-      function addMarkersToCluster($this, latLng){
-        var lat = latLng.lat(), 
-            lng = latLng.lng(),
-            dy = (1/60),
-            dx = 1/(60* Math.cos(Math.PI * lat / 180)),
-            miles = 15,
-            list = [];
-        list.push([lat, lng]);
-        list.push([lat+miles*dy, lng]);
-        list.push([lat-miles*dy, lng]);
-        list.push([lat, lng+miles*dx]);
-        list.push([lat, lng-miles*dx]);
-            
-      $this.gmap3({action:'addMarkers', markers:list, to:cluster});
-    }
-
-
-
-      }); // End maps
-
-      $(document).ready(function() {
-      $('[rel=tooltip]').tooltip();
+ $(document).ready(function() {
       $('body').css('display', 'none');
       $('body').fadeIn(500);
 
@@ -734,9 +589,7 @@
       function newpage() {
       window.location = newLocation;
       }
-    });
-    
-
-    </script>
+});
+</script>
 </body>
 </html>

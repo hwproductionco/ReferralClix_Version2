@@ -38,7 +38,7 @@
                                "</div>" +
                                "<div class='modal-footer'>" +
                                    "<a href='#' class='btn' data-dismiss='modal'>Cancel</a>" +
-                                   "<a href='#' class='btn btn-primary' data-dismiss='modal'>Insert link</a>" +
+                                   "<a href='#' class='btn btn-success' data-dismiss='modal'>Insert link</a>" +
                                "</div>" +
                            "</div>" +
                            "<a class='btn' data-wysihtml5-command='createLink' title='Link'><i class='icon-share'></i></a>" +
@@ -54,7 +54,7 @@
                                "</div>" +
                                "<div class='modal-footer'>" +
                                    "<a href='#' class='btn' data-dismiss='modal'>Cancel</a>" +
-                                   "<a href='#' class='btn btn-primary' data-dismiss='modal'>Insert image</a>" +
+                                   "<a href='#' class='btn btn-success' data-dismiss='modal'>Insert image</a>" +
                                "</div>" +
                            "</div>" +
                            "<a class='btn' data-wysihtml5-command='insertImage' title='Insert image'><i class='icon-picture'></i></a>" +
@@ -207,7 +207,7 @@
             var self = this;
             var insertImageModal = toolbar.find('.bootstrap-wysihtml5-insert-image-modal');
             var urlInput = insertImageModal.find('.bootstrap-wysihtml5-insert-image-url');
-            var insertButton = insertImageModal.find('a.btn-primary');
+            var insertButton = insertImageModal.find('a.btn-success');
             var initialValue = urlInput.val();
 
             var insertImage = function() {
@@ -246,7 +246,7 @@
             var self = this;
             var insertLinkModal = toolbar.find('.bootstrap-wysihtml5-insert-link-modal');
             var urlInput = insertLinkModal.find('.bootstrap-wysihtml5-insert-link-url');
-            var insertButton = insertLinkModal.find('a.btn-primary');
+            var insertButton = insertLinkModal.find('a.btn-success');
             var initialValue = urlInput.val();
 
             var insertLink = function() {

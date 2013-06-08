@@ -3147,7 +3147,7 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
-.btn-primary.active,
+.btn-success.active,
 .btn-warning.active,
 .btn-danger.active,
 .btn-success.active,
@@ -3161,7 +3161,7 @@ input[type="button"].btn-block {
   border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
 }
 
-.btn-primary {
+.btn-success {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #e84723;
@@ -3178,12 +3178,12 @@ input[type="button"].btn-block {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+.btn-success:hover, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] {
   color: white;
   background-color: #de4723;
   *background-color: #c93f1e;
 }
-.btn-primary:active, .btn-primary.active {
+.btn-success:active, .btn-success.active {
   background-color: #b3381b \9;
 }
 
@@ -3521,7 +3521,7 @@ input[type="submit"].btn.btn-mini {
 .btn-group.open .btn.dropdown-toggle {
   background-color: #e6e6e6;
 }
-.btn-group.open .btn-primary.dropdown-toggle {
+.btn-group.open .btn-success.dropdown-toggle {
   background-color: #de4723;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
@@ -3561,7 +3561,7 @@ input[type="submit"].btn.btn-mini {
   border-bottom-width: 5px;
 }
 
-.btn-primary .caret,
+.btn-success .caret,
 .btn-warning .caret,
 .btn-danger .caret,
 .btn-info .caret,
@@ -7851,7 +7851,7 @@ table.display tr.gradeU {
   color: #ef4723;
 }
 
-.btn.btn-primary1 {
+.btn.btn-success1 {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -7868,22 +7868,22 @@ table.display tr.gradeU {
   color: #fff;
   text-shadow: none;
 }
-.btn.btn-primary1:hover, .btn.btn-primary1.hover {
+.btn.btn-success1:hover, .btn.btn-success1.hover {
   border-color: #ff7624;
   background-color: #d93f1e;
   background-image: none;
   color: #fff;
 }
-.btn.btn-primary1:active, .btn.btn-primary1.active {
+.btn.btn-success1:active, .btn.btn-success1.active {
   border-color: #dc6015;
   background-color: #d93f1e;
   background-image: none;
   color: #fff;
 }
-.btn.btn-primary1:active:hover, .btn.btn-primary1:active.hover, .btn.btn-primary1.active:hover, .btn.btn-primary1.active.hover {
+.btn.btn-success1:active:hover, .btn.btn-success1:active.hover, .btn.btn-success1.active:hover, .btn.btn-success1.active.hover {
   border-color: #dc6015;
 }
-.btn.btn-primary1.disabled, .btn.btn-primary1.disabled:hover, .btn.btn-primary1[disabled], .btn.btn-primary1[disabled]:hover {
+.btn.btn-success1.disabled, .btn.btn-success1.disabled:hover, .btn.btn-success1[disabled], .btn.btn-success1[disabled]:hover {
   border-color: #ef4723;
   background-color: #ef4723;
   background-image: none;
@@ -8014,7 +8014,7 @@ table.display tr.gradeU {
 .tab-contents .legend .btn i, .tab-contents fieldset legend .btn i, fieldset .tab-contents legend .btn i {
   color: #7e838b;
 }
-.tab-contents .legend .btn-primary, .tab-contents fieldset legend .btn-primary, fieldset .tab-contents legend .btn-primary, .tab-contents .legend .btn-primary i, .tab-contents fieldset legend .btn-primary i, fieldset .tab-contents legend .btn-primary i {
+.tab-contents .legend .btn-success, .tab-contents fieldset legend .btn-success, fieldset .tab-contents legend .btn-success, .tab-contents .legend .btn-success i, .tab-contents fieldset legend .btn-success i, fieldset .tab-contents legend .btn-success i {
   color: #fff;
 }
 .tab-contents .legend .btn-large, .tab-contents fieldset legend .btn-large, fieldset .tab-contents legend .btn-large {
